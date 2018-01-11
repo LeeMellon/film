@@ -1,3 +1,31 @@
-ul {
-  list-style: none; 
+
+.jumbotron{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+body, html {
+  background-image: url("1.jpg");
+  background-position: center;
+  background-attachment: fixed;
+
+}
+#box{
+  width: 100%;
+  color: white;
+}
+#form-fields{
+color: white;
+
+
+}
+#img1{
+  height: 450px;
+  width: auto;
+}
+#target{
+  color: white;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
 }

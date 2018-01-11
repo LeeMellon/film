@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h1>Films</h1>
-        <h4>Our film website</h4>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Films</h1>
+      <h4>Our film website</h4>
+    </div>
+    <div class="row" id="movies">
+      <div id="box">
+      <div class="col-md-1">
+<!-- this stays blank -->
       </div>
-      <div class="row" id="movies">
-        <div class="col-md-6">
-          <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BOGM1OGVhNTEtYjk3Zi00MzFhLWI4NDQtNWNlYTgyNTIyYjU2XkEyXkFqcGdeQXVyNDkzNTM2ODg@._V1_UY268_CR3,0,182,268_AL_.jpg" alt="">
+      <div class="col-md-5 ">
+        <div id="form-fields">
+          <img id="img1" src="https://images-na.ssl-images-amazon.com/images/M/MV5BOGM1OGVhNTEtYjk3Zi00MzFhLWI4NDQtNWNlYTgyNTIyYjU2XkEyXkFqcGdeQXVyNDkzNTM2ODg@._V1_UY268_CR3,0,182,268_AL_.jpg" alt="">
           <form class="pulldown" action="index.html" method="post">
             <select class="form-control" id="wings">
               <option value=>Select Media Type</option>
@@ -28,73 +35,59 @@
             <button type="submit" class="btn">submit</button>
           </form>
         </div>
-        <div class="col-md-6">
-          <img src="https://images-na.ssl-images-amazon.com/images/I/51l5uUk5WNL._SY450_.jpg" alt="">
-          <form>
-            <div class="radio">
-              <label>
+      </div>
+      <div class="col-md-5">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51l5uUk5WNL._SY450_.jpg" alt="">
+        <form>
+          <div class="radio">
+            <label>
                 <input type="radio" name="type" value="DVD">
                 DVD
               </label>
-            </div>
-            <div class="radio">
-              <label>
+          </div>
+          <div class="radio">
+            <label>
                 <input type="radio" name="type" value="Blu-ray">
                 Blu-ray
               </label>
-            </div>
-            <div class="radio">
-              <label>
+          </div>
+          <div class="radio">
+            <label>
                 <input type="radio" name="type" value="VHS">
                 VHS
               </label>
-            </div>
-            <div class="radio">
-              <label>
+          </div>
+          <div class="radio">
+            <label>
                 <input type="radio" name="type" value="Beta">
                 Beta
               </label>
-            </div>
-          </form>
-        </div>
-        <div class="row" id="filmbook">
-            <form>
-            Film Name:<br>
-            <input type="text" name="film" placeholder="Film Name" id="filmname">
-            <br>
-            Director<br>
-            <input type="text" name="director" id="director" placeholder="Director"><br>
-            Actor 1:<br>
-            <input type="text" name="actor1" placeholder="Actor 1" id="actor1"><br>
-            Actor 2:<br>
-            <input type="text" name="actor2" placeholder="Actor 2" id="actor2"><br>
-            Your first name:<br>
-            <input type="text" name="firstname" placeholder="first name" id="firstname">
-            <br>
-            <button type="submit" name="form-bt" id="form-bt">submit</button>
-          </form>
-
-        </div>
-        <hr>
-        <div ></div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-1">
+<!-- this remains blank -->
+      </div>
+    </div> <!--movie row div -->
+    </div>
+      <div class="row" id="filmbook">
+        <form>
+          <br>Film Name:<br>
+          <input type="text" name="film" placeholder="Film Name" id="filmname">
+          <br> Director
+          <br>
+          <input type="text" name="director" id="director" placeholder="Director"><br> Actor 1:<br>
+          <input type="text" name="actor1" placeholder="Actor 1" id="actor1"><br> Actor 2:<br>
+          <input type="text" name="actor2" placeholder="Actor 2" id="actor2"><br> Your first name:<br>
+          <input type="text" name="firstname" placeholder="first name" id="firstname">
+          <br>
+          <button type="submit" name="form-bt" id="form-bt">submit</button>
+        </form>
+      </div>
+      <hr>
+      <div>
         <ul id=target></ul>
-        <!-- <div class="well" id="target">
-            <ul id="film-into-list">
-              <li id="li1"></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul> -->
-        </div>
-        <div class="row" id="color">
-
-
-        </div>
-
-      </div> <!--movie row div -->
-
-    </div> <!--containter div -->
-
-  </body>
+      </div>
+  </div> <!--containter div -->
+</body>
 </html>
